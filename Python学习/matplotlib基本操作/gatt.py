@@ -40,7 +40,7 @@ def gatt(CHS,Processing_time,Setup_time,Transpotation_time,M_num,O_Max_len,J_num
 
 plt.barh(y=12,              # y轴中线坐标
          width=10,          # 宽度
-         height=1,        # 高度
+         height=1,          # 高度
          left=3,            # x左边坐标
          color='grey',
          edgecolor='black')

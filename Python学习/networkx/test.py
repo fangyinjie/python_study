@@ -9,9 +9,9 @@ if __name__ == "__main__":
 # 如果为g.nodes(data=True)的data参数设置为true，
 # 那么返回的是NodeDataView对象，该对象不仅包含每个顶点的ID属性，还包括顶点的其他属性。
     g_1.add_node(1)
-    g_1.add_nodes_from([2,3,4])
+    g_1.add_nodes_from([2, 3, 4])
     g_2.add_node(1)
-    g_2.add_nodes_from([2,3,4])
+    g_2.add_nodes_from([2, 3, 4])
     print(g_1.nodes())
     print(g_2.nodes())
 # NodeView((1, 2,3,4))
