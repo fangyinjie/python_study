@@ -1,0 +1,32 @@
+digraph {
+	0 [label="Test
+0"]
+	1 [label="Test
+1"]
+	2 [label="Test
+2"]
+	3 [label="Test
+3"]
+	4 [label="Test
+4"]
+	5 [label="Test
+5"]
+	6 [label="Test
+6"]
+	7 [label="Test
+7"]
+	8 [label="Test
+8"]
+	9 [label="Test
+9"]
+	1 -> 9
+	7 -> 2
+	3 -> 2
+	6 -> 7
+	6 -> 1
+	1 -> 4
+	7 -> 4
+	3 -> 4
+	5 -> 2
+	8 -> 2
+}
