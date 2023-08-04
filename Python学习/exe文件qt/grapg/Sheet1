@@ -1,0 +1,53 @@
+digraph {
+	1 [label="Node_ID:Job_1_1
+WCET:3032
+"]
+	2 [label="Node_ID:Job_2_1
+WCET:196196
+"]
+	3 [label="Node_ID:Job_3_1
+WCET:89624
+"]
+	4 [label="Node_ID:Job_3_2
+WCET:89624
+"]
+	5 [label="Node_ID:Job_3_3
+WCET:89624
+"]
+	6 [label="Node_ID:Job_4_1
+WCET:88888
+"]
+	7 [label="Node_ID:Job_5_1
+WCET:89056
+"]
+	8 [label="Node_ID:Job_6_1
+WCET:10000
+"]
+	9 [label="Node_ID:Job_7_1
+WCET:52492
+"]
+	10 [label="Node_ID:Job_7_2
+WCET:52492
+"]
+	11 [label="Node_ID:Job_7_3
+WCET:52492
+"]
+	12 [label="Node_ID:Job_8_1
+WCET:39996
+"]
+	1 -> 2
+	2 -> 3
+	2 -> 4
+	2 -> 5
+	2 -> 6
+	3 -> 7
+	4 -> 7
+	5 -> 7
+	6 -> 7
+	6 -> 8
+	7 -> 9
+	7 -> 10
+	7 -> 11
+	7 -> 12
+	8 -> 12
+}
