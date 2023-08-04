@@ -1,7 +1,7 @@
 import random
 import simpy
 import networkx as nx
-
+111
 # 可接受输入参数
 RANDOM_SEED = 0     # 不设置
 NUM_MACHINES = 2    # 可以同时处理的机器数（类似工作工位数）
