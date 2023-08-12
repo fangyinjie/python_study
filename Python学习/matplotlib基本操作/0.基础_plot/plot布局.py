@@ -25,9 +25,9 @@ if __name__ == "__main__":
     # # 作画还需要轴，没有轴的话就没有绘图基准，所以需要添加Axes。也可以理解成为真正可以作画的纸。
     # # 可以发现我们上面添加 Axes 似乎有点弱鸡，所以提供了下面的方式一次性生成所有 Axes：
     fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(128, 128), dpi=80,facecolor='w', edgecolor='k')
-    axes[0, 0].set( title='An Example Axes',            # 图的名字
-                    # xlim=[0.5, 4.5],ylim=[-2, 8],       # x与y轴的区间
-                    xlabel='X-Axis', ylabel='Y-Axis' )  # x与y轴坐标
+    axes[0, 0].set( title='An Example Axes',                # 图的名字
+                    # xlim=[0.5, 4.5],ylim=[-2, 8],         # x与y轴的区间
+                    xlabel='X-Axis', ylabel='Y-Axis' )      # x与y轴坐标
     x = np.arange(-1, 1, 0.1)       # 生成一组x值
     y = f(x)                        # 根据函数计算一组y值
     axes[0, 0].plot(x, y)           # 绘制函数曲线图
@@ -37,7 +37,6 @@ if __name__ == "__main__":
     x = np.linspace(0, 10, 100)
     y = 4 + 2 * np.sin(2 * x)
     axes[0, 1].plot(x, y, linewidth=2.0)
-
     # ### # (3) # ### #
     axes[1, 0].set(title='Lower Left')
 
