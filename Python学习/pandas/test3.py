@@ -7,7 +7,7 @@ import random
 # data = df.values.tolist()
      # orient="index" 表头算进每一行的字典
 for line_x in range(10):
-    df = pd.read_csv('./site.csv', index_col=0)
+    df = pd.read_csv('data/site.csv', index_col=0)
     # labels = list(df.columns.values)
     df = df.T
     labels = list(df.columns.values)

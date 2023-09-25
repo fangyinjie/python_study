@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn import preprocessing
+# from sklearn import preprocessing
 import numpy as np
 
 def Normalize(array):
