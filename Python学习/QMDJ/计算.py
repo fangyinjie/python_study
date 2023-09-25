@@ -12,7 +12,7 @@ if __name__ == "__main__":
     # # cc[1][1] = True
     # print('')
     # # print(cc[:, :])
-    # print(cc)
+    # print(cc) 1231
     a1 = 313  # 第一个数字 下卦
     b1 = 644  # 第一个数字 上挂
     c1 = 522  # 第一个数字 爻位3
