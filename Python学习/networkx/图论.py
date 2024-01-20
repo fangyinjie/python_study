@@ -15,6 +15,8 @@ G.add_edge('F', 'D', weight=2, cc=12)
 G.add_edge('G', 'D', weight=3, cc=12)
 G.add_edge('H', 'D', weight=1, cc=0)
 
+G.remove_nodes_from({'F','G','H'})
+CCC = nx.ancestors(G, 'D')
 for u, v, d in G.edges(data=True):
     print(u, v, d['weight'])
 edge_labels = dict([((u, v,), d['weight']) for u, v, d, c in G.edges(data=True) if (c > 10)])
