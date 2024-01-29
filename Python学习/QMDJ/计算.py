@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 
 def caculate(a, b, c):
@@ -12,9 +12,8 @@ if __name__ == "__main__":
     # # cc[1][1] = True
     # print('')
     # # print(cc[:, :])
-    # print(cc) 1231
-    a1 = 313  # 第一个数字 下卦
-    b1 = 644  # 第一个数字 上挂
-    c1 = 522  # 第一个数字 爻位3
+    # print(cc)
+    a1 = 413  # 第一个数字 下卦
+    b1 = 257  # 第一个数字 上挂
+    c1 = 156  # 第一个数字 爻位
     print(caculate(a1, b1, c1))
-

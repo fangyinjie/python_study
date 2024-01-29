@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 
 import matplotlib.pyplot as plt
-# Filename : test.py
+# Filename : test1.py
 # author by : www.runoob.com
 
 # Python 程序用于检测用户输入的数字是否为质数
