@@ -31,20 +31,15 @@ def main():
     fitnessValues = list(map(toolbox.evaluate, population))          # （2）计算初始种群中个体的适应度，map()函数将evaluate操作应用于种群中的每个个体。
     for individual, fitnessValue in zip(population, fitnessValues):  # （3）将适应度值分配给每个个体的适应度元组：
         individual.fitness.values = fitnessValue
-    # 由于适应度元组仅有一个值，因此从每个个体的适应度中提取第一个值以获取统计数据：
     # fitnessValues = [individual.fitness.values[0] for individual in population]
     fitnessValues = list(next(zip(*fitnessValues)))  # 第一次 [0]
     maxFitnessValues = []       # 最大适应度
     meanFitnessValues = []      # 平均适应度
 
     Gen_Counter = 0
-    while max(fitnessValues) < ONE_MAX_LENGTH and (Gen_Counter := Gen_Counter+1) < MAX_GENERATION:
-
-        # 遗传算法的核心是遗传运算符。
-        # 第一个是selection运算符，使用先前利用toolbox.select定义的锦标赛选择。由于我们已经在定义运算符时设置了锦标赛大小，因此只需要将物种及其长度作为参数传递给选择运算符：
-        offspring = toolbox.select(population, len(population))
+    while max(fitnessValues) < ONE_MAX_LENGTH and (Gen_Counter := Gen_Counter + 1) < MAX_GENERATION:
+        offspring = toolbox.select(population, len(population))   # 遗传运算符1——selection运算符（toolbox.select定义的锦标赛选择），将物种及其长度作为参数传递给选择运算符
         offspring = list(map(toolbox.clone, offspring))
-
         for child1, child2 in zip(offspring[::2], offspring[1::2]):
             if random.random() < P_CROSSOVER:
                 toolbox.mate(child1, child2)
@@ -102,6 +97,5 @@ if __name__ == "__main__":
     toolbox.register("select", tools.selTournament, tournsize=3)  # (1) 创建遗传算子1-选择运算符;
     toolbox.register("mate", tools.cxOnePoint)  # (2) 创建遗传算子2-交叉运算符;
     toolbox.register("mutate", tools.mutFlipBit, indpb=1.0 / ONE_MAX_LENGTH)  # (3) 创建遗传算子3-变异运算符;
-
 
     main()

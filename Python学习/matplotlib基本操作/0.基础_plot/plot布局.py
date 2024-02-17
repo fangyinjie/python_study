@@ -12,7 +12,7 @@ from matplotlib.pyplot import figure
 import matplotlib.pyplot as plt
 import numpy as np
 
-def f(x1):              # 定义函数
+def f(x1):  # 定义函数
     return (1 + x1) / (1 - x1)
 
 
