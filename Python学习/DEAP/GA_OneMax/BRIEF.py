@@ -9,7 +9,7 @@ import time
 P_MUTATION = 0.1  # 变异的概率
 P_CROSSOVER = 0.9  # 交叉的概率
 MAX_GENERATION = 500  # 停止条件中的最大迭代次数
-ONE_MAX_LENGTH = 20  # 优化的bit字符串的长度
+ONE_MAX_LENGTH = 15  # 优化的bit字符串的长度
 POPULATION_SIZE = 200  # 种群中的个体数量(越大越平滑)
 
 
@@ -71,7 +71,7 @@ def main():
                                                                            meanFitnessValue))
 
         best_index = fitnessValues.index(max(fitnessValues))
-        print("Best Indivadual = ", *population[best_index], "\n")
+        # print("Best Indivadual = ", *population[best_index], "\n")
 
     plt.plot(maxFitnessValues, color="red")
     plt.plot(meanFitnessValues, color="green")
